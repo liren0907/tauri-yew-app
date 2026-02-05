@@ -1,0 +1,22 @@
+[build]
+target = "./index.html"
+
+[tools]
+tailwindcss = "3.3.5"
+
+[watch]
+ignore = ["./src-tauri"]
+watch = [
+  "tailwind.config.js",
+  "postcss.config.js",
+  "tailwind.css"
+]
+
+[[hooks]]
+stage = "pre_build"
+command = "npm"
+command_arguments = ["run", "build:css"]
+
+[serve]
+port = 1420
+open = false

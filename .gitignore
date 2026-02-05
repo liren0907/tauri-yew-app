@@ -1,0 +1,22 @@
+# Rust / Cargo
+target/
+**/target/
+
+# Tauri
+src-tauri/gen/
+
+# Trunk / frontend build output
+dist/
+style.css
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
